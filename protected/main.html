@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./utils/index.js"></script>
+</head>
+
+<body class="bodyAfterLog" id="bodyMain">
+    <header>
+        <nav>
+            <h1>MultiTopic Platform</h1>
+            <ol>
+                <li><a href="/main">Topics</a></li>
+                <li><a>Profile</a></li>
+                <li><a href="/editProfile">Edit Profile</a></li>
+            </ol>
+            <button class="logOut">Log Out</button>
+        </nav>
+        
+    </header>
+    <main class="main">
+        <menu>
+            <ol></ol>
+            <div class="subjectButtonsContainer">
+             <button id="searchButton" class="subjectButtons">Search</button>
+             <button id="addSubject" class="subjectButtons add">Add New Subject</button>   
+            </div>
+        </menu>
+        
+        <div id="posts">
+            <div id="dashboard">
+            </div>
+            <div id="dashboardButtons">
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

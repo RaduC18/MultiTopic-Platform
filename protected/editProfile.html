@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./utils/index.js"></script>
+</head>
+
+<body class="bodyAfterLog" id="bodyEditProfile">
+    <header>
+        <nav>
+            <h1>MultiTopic Platform</h1>
+            <ol>
+                <li><a href="/main">Topics</a></li>
+                <li><a>Profile</a></li>
+                <li><a href="/editProfile">Edit Profile</a></li>
+            </ol>
+            <button class="logOut">Log Out</button>
+        </nav>
+    </header>
+    <main class="bodyEditProfile">
+        <div class="divEditProfile">
+            <form method="post" class="formEditProfile">
+                <div>
+                    <h3>Modify email</h3>
+                    <input type="text" name="currentEmail" readonly />
+                    <label>Current Email</label>
+                </div>
+                <div>
+                    <input type="text" name="email" placeholder="email" required/>
+                    <label for="email">Email</label>
+                </div>
+                <div>
+                    <input type="password" name="password" placeholder="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="containerForModifyEmailButton"><button class="emailButton">Modify</button></div>
+            </form>
+            <div class="lineEditProfile"></div>
+            <form method="post" class="formEditProfile">
+                <div>
+                    <h3>Modify password</h3>
+                    <input type="password" name="oldPassword" placeholder="Old password" required/>
+                    <label for="oldPassword">Old password</label>
+                </div>
+                <div>
+                    <input type="password" name="newPassword" placeholder="New password" required/>
+                    <label for="newPassword">New password</label>
+                </div>
+                <div>
+                    <input type="password" name="newPasswordConfirmation" placeholder="Confirm new password" required/>
+                    <label for="password">Confirm new password</label>
+                </div>
+                <div class="containerForModifyPasswordButton"><button class="passwordButton">Modify</button></div>
+            </form>
+            <div class="lineEditProfile"></div>
+            <form method="post" class="formEditProfile">
+            <div>
+                <h3>Modify name</h3>
+                <input type="text" name="name" placeholder="Name" required/>
+                <label for="name">Name</label>
+            </div>
+            <div class="containterForModifyNameButton"><button class="nameButton">Modify</button></div>
+
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

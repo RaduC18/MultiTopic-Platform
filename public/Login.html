@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+     <script type="module" src="./utils/index.js"></script>
+    <title>Document</title>
+</head>
+<body class="bodyLoginAndRegister" >
+    <form action="/login" class="formLoginAndRegister" id="formLogin" method="post">
+        <input type="text" name="email" placeholder="Email" required/>
+        <input type="password" name="password" placeholder="Password" required/>
+        <button>Log In</button>
+        <div class="line"></div>
+        
+          <a href="/register" class="anchorRegister">Create new account</a>  
+        
+    </form>
+</body>
+</html>
